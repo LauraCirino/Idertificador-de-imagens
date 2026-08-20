@@ -1,0 +1,23 @@
+body{
+    background-color: pink;
+    color: rgb(110, 28, 41);
+    align-items: center;
+    text-align: center;
+}
+
+.heading{
+    width: 80%;
+    font-size: 22px;
+}
+
+.nameOfObjects, #resultObjectName, #resultObjectAccuracy{
+    color: whitesmoke
+}  
+
+#camera{
+    border: 2px dashed whitesmoke;
+    width: 350px;
+    height: 300px;
+    border-radius: 5px;
+    margin: auto;
+}

@@ -21,9 +21,33 @@
 </head>
 <body>
     <div class="container">
-        <h3 class="btn btn-light heading">IDENTIFICADOR DE IMAGEM</h3>
+        <h3 class="btn btn-info heading">IDENTIFICADOR DE IMAGEM</h3>
         <br><br>
         <p style="font-size: 22px;">O modelo foi treinado para identificar estes objetos: </p>
+        <b class="nameOfObjects">
+            <hr>
+            base
+            <hr>
+            blush 
+            <hr>
+            perfume 
+            <hr>
+            rimel
+            <hr>
+            lapis de olho
+            <hr>
+        </b>
+        <label>visualização da webcam</label>
+        <div id="camera"></div>
+        <br><br>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="takeSnapshot()" class="btn btn-info">Capturar Imagens</button>
+        <br><br>
+        <button onclick="check()" class="btn btn-success">Identificar Imagem</button>
+        <br><br>
+        <p style="font-size: 22px;">Objeto: <span id="resultObjectName"></span></p>
+        <p style="font-size: 22px;">Precisão: <span id="resultObjectAccuracy"></span></p>
     </div>
     <script src="main.js"></script>
 </body>
